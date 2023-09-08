@@ -1,6 +1,5 @@
 package com.aws.spring_study.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -19,18 +18,26 @@ public class ReqStudyController {
 
     @PostMapping("/test/post")
     public Object post() {
-        return null;
+        return "POST";
     }
 
     @PutMapping("/test/put")
-        public Object put() {
-            return "PUT";
-        }
-
+    public Object put() {
+        return "PUT";
+    }
 
     @DeleteMapping("/test/delete")
-        public Object delete() {
-            return "DELETE";
-        }
-
+    public Object delete() {
+        return "DELETE";
+    }
 }
+
+
+
+
+
+
+
+
+
+

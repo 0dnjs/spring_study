@@ -6,18 +6,20 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 @RestController
 public class GetController {
 
     @GetMapping("/get/params/1")
-    public Object paramsTest1(@RequestParam String name, @RequestParam Integer age){
-            System.out.println(name);
-            System.out.println(age);
-            return null;
-        }
+    public Object paramsTest1(String name, Integer age) {
+        System.out.println(name);
+        System.out.println(age);
+        return null;
+    }
 
     @GetMapping("/get/params/2")
-    public Object paramsTest2(ParamsTestDto paramsTestDto ){
+    public Object paramsTest2(ParamsTestDto paramsTestDto) {
         System.out.println(paramsTestDto);
         return null;
     }
@@ -27,5 +29,8 @@ public class GetController {
         System.out.println(id);
         return null;
     }
-}
 
+
+
+
+}

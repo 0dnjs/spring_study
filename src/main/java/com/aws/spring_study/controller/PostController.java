@@ -15,7 +15,7 @@ public class PostController {
         return null;
     }
 
-    @PostMapping("/post/json") // json형식으로 데이터를 받으려면 @RequestBody를 붙여줘야함
+    @PostMapping("/post/json")
     public Object json(@RequestBody JsonTestDto jsonTestDto) {
         System.out.println(jsonTestDto);
         return null;
